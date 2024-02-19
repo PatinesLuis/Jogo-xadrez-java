@@ -2,6 +2,7 @@ package xadrez;
 
 import tabuleiro.MesaTabuleiro;
 import tabuleiro.Posicao;
+import xadrez.pecas.Rei;
 import xadrez.pecas.Torre;
 
 public class PartidaXadrez {
@@ -24,6 +25,7 @@ public class PartidaXadrez {
 	}
 	
 	private void iniciarPartida() {
-		tabuleiro.adicionarPeca(new Torre(tabuleiro, Color.BLACK), new Posicao(2, 1));
+		tabuleiro.adicionarPeca(new Torre(tabuleiro, Color.BLACK), new Posicao(2, 4));
+		tabuleiro.adicionarPeca(new Rei(tabuleiro, Color.WHITE), new Posicao(1, 4));
 	}
 }
